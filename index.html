@@ -50,7 +50,7 @@
       background:#1ebc5a;
       color:#fff;
     }
-    .live-btn {
+   .live-btn {
       width: 60px;
       height: 60px;
       border-radius: 50%;
@@ -63,6 +63,12 @@
       font-size: 14px;
       animation: blink 1s infinite;
       box-shadow: 0 0 10px rgba(255,0,0,0.7);
+
+      /* Floating fixed position */
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
     }
 
     @keyframes blink {
@@ -73,7 +79,7 @@
   </style>
 </head>
 
-<body class="d-flex justify-content-center align-items-center bg-light">
+<body style="height:2000px; background:#f8f9fa;">
 <div class="live-btn">
     LIVE
   </div>
