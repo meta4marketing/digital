@@ -50,11 +50,33 @@
       background:#1ebc5a;
       color:#fff;
     }
+    .live-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 14px;
+      animation: blink 1s infinite;
+      box-shadow: 0 0 10px rgba(255,0,0,0.7);
+    }
+
+    @keyframes blink {
+      0%   { opacity: 1; }
+      50%  { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
   </style>
 </head>
 
-<body>
-
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+<div class="live-btn">
+    LIVE
+  </div>
 <div class="container py-4">
 
     <h2 class="text-center mb-4">Our Products</h2>
